@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ElectDrawing</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="shop/css/style.css">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#" style="color: #197824;">ELECT</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav m-auto text-center">
+	        <li class="nav-item">
+	          <a class="nav-link" href="index.html">Главная</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Портфолио</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" style="color: #197824;" aria-current="page" href="#">Магазин</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Контакты</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>	
+</header>
+<section>
+	<div class="market-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-md-6 col-sm-12">
+					<div class="block">
+						<img src="img/works/1.png" alt="1" class="portfolio-1">
+						<p class="price">999 РУБЛЕЙ</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
